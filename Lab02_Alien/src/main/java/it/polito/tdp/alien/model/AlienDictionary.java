@@ -10,7 +10,7 @@ public class AlienDictionary {
 	public  AlienDictionary () {
 		super ();
 		
-	}
+	} 
 private  void  aggiungiVoce ( String  testoInput ) {
 		
 		String alienWord = testoInput.substring( 0 , testoInput . indexOf ( "  " ));

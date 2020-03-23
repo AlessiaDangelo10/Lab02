@@ -8,7 +8,7 @@ public  Word ( String  alienWord , String  italianWord ) {
 			this.alienWord = alienWord;
 		this.italianWord = italianWord;
 		}
-
+ 
 		public  String  getAlienWord () {
 			return alienWord;
 		}
