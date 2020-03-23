@@ -12,7 +12,8 @@ public class EntryPoint extends Application {
 
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Scene.fxml"));
+    
+    	Parent root=FXMLLoader.load(getClass().getResource ("Scene.fxml"));
         
         Scene scene = new Scene(root);
         scene.getStylesheets().add("/styles/Styles.css");
@@ -27,6 +28,7 @@ public class EntryPoint extends Application {
      * main() serves only as fallback in case the application can not be
      * launched through deployment artifacts, e.g., in IDEs with limited FX
      * support. NetBeans ignores main().
+     * FXMLLoader loader = new FXMLLoader(Main.class.getResource("/MainWindowView.fxml"));
      *
      * @param args the command line arguments
      */
