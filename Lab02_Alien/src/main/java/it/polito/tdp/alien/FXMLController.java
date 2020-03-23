@@ -25,6 +25,7 @@ public class FXMLController {
     @FXML
     private TextField txtInsert;
 
+    
     @FXML
     private Button btnTranslate;
 
