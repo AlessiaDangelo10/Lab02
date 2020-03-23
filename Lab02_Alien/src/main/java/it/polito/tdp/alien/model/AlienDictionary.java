@@ -50,7 +50,7 @@ public class AlienDictionary {
 			
 			return " la parole non esiste \n " ;
 		}
-	}
+	} 
 
 	private  void  aggiungiVoce ( String  testoInput ) {
 		// TODO Stub del metodo generato automaticamente

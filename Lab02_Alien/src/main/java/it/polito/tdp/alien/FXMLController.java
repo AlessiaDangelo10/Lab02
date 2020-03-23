@@ -16,6 +16,7 @@ AlienDictionary dizionario;
     @FXML
     private ResourceBundle resources;
 
+    
     @FXML
     private URL location;
 
