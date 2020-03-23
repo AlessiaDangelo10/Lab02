@@ -34,7 +34,6 @@ AlienDictionary dizionario;
     @FXML
     void  doTranslate (  ActionEvent event ) {
     	// TODO - aggiungi il pulsante e completa questo  
-    	
     	String testoInput = txtInsert.getText ();
     	txtInsert.clear();
     	
