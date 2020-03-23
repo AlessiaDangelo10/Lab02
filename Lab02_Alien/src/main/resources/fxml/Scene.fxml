@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<fx:root type="BorderPane" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.alien.FXMLController">
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.polito.tdp.alien.FXMLController">
    <top>
       <Label text="Lab 2 - Alien Translator" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -76,4 +76,4 @@
          </children>
       </VBox>
    </center>
-</fx:root>
+</BorderPane>

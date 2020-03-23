@@ -11,14 +11,16 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
 public class FXMLController {
+	AlienDictionary dizionario;
 
-AlienDictionary dizionario;
     @FXML
     private ResourceBundle resources;
 
-    
     @FXML
     private URL location;
+
+    @FXML
+    private Button btnReset;
 
     @FXML
     private TextField txtInsert;
@@ -30,27 +32,18 @@ AlienDictionary dizionario;
     private TextArea txtResult;
 
     @FXML
-    private Button btnReset;
-
-    @FXML
     void  doTranslate (  ActionEvent event ) {
-    	// TODO - aggiungi il pulsante e completa questo  
     	String testoInput = txtInsert.getText ();
     	txtInsert.clear();
-    	
-    	String testoOutput = dizionario.aggiungitraduci (testoInput);
-    	
+    	String testoOutput = dizionario.aggiungitraduci(testoInput);
     	txtResult.appendText (testoOutput);
     }
     
     
     @FXML
     void  doReset (  ActionEvent event  ) {
-    	// TODO - aggiungi il pulsante e completa questo
-    	
     	dizionario.reset();
-    	
-    txtResult.clear();
+        txtResult.clear();
     	
     }
     
@@ -62,7 +55,7 @@ AlienDictionary dizionario;
           assert txtInsert != null : "fx:id=\"txtInsert\" was not injected: check your FXML file 'Scene.fxml'.";
           assert btnTranslate != null : "fx:id=\"btnTranslate\" was not injected: check your FXML file 'Scene.fxml'.";
           assert txtResult != null : "fx:id=\"txtResult\" was not injected: check your FXML file 'Scene.fxml'.";
-       dizionario =  new  AlienDictionary ();
+          dizionario =  new  AlienDictionary ();
     }
 }
 
